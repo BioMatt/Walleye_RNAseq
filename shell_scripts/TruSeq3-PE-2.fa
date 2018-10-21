@@ -10,3 +10,5 @@ AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTA
 GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT
 >PE2_rc
 AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+
+# Fasta file for Illumina adaptors taken from https://github.com/timflutre/trimmomatic/blob/master/adapters/TruSeq3-PE-2.fa
