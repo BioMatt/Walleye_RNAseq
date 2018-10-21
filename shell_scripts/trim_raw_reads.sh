@@ -5,6 +5,9 @@
 #SBATCH --mem=24000M
 # Following the example of https://github.com/DworkinLab/Bio720/blob/master/ExampleShellScripts/sd_BSA2014_trimmomatic.sh
 # This script runs trimmomatic/0.36 in an array across 48 individuals with paired-end reads
+# For some reason, the first file read by the files variable is indented by one tab, so it is not passed properly to  
+# the rest of the program. As run in this pipeline, Wall-002 is thus skipped. Wall-002 was then analyzed with a separate
+# trimmomatic script specific to it.
 # Set up the memory and time requested
 # Load java and trimmomatic
 module load java
