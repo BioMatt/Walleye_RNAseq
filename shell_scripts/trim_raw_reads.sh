@@ -3,6 +3,7 @@
 #SBATCH --account=def-kmj477
 #SBATCH --array=1-48
 #SBATCH --mem=24000M
+# Following the example of https://github.com/DworkinLab/Bio720/blob/master/ExampleShellScripts/sd_BSA2014_trimmomatic.sh
 # This script runs trimmomatic/0.36 in an array across 48 individuals with paired-end reads
 # Set up the memory and time requested
 # Load java and trimmomatic
