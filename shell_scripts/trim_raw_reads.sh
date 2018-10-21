@@ -31,6 +31,7 @@ echo ${name}
 # Finally, use the Illumina TruSeq3-PE-2 fasta file for clipping reads (also included in this git repository), 
 # set the leading and trailing Phred score thresholds to 5,
 # a sliding window threshold of 4 nucleotides averaging 5 phred overall, and trimming for a minimum read length of 36
+# If I were to run this again, I'd have the paired and unpaired trimmed outputs go to different directories
 java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.36.jar PE \
 ${dir}${name}_R1.fastq.gz ${dir}${name}_R2.fastq.gz \
 ${out_dir}${name}_R1_paired.fq.gz ${out_dir}${name}_R1_unpaired.fq.gz \
