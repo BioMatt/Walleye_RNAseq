@@ -1,0 +1,17 @@
+Wall-188-D_R1_paired.fq.gz
+Wall-188-D_R2_paired.fq.gz
+44043000 reads; of these:
+  44043000 (100.00%) were paired; of these:
+    8265827 (18.77%) aligned concordantly 0 times
+    9085064 (20.63%) aligned concordantly exactly 1 time
+    26692109 (60.60%) aligned concordantly >1 times
+    ----
+    8265827 pairs aligned concordantly 0 times; of these:
+      480361 (5.81%) aligned discordantly 1 time
+    ----
+    7785466 pairs aligned 0 times concordantly or discordantly; of these:
+      15570932 mates make up the pairs; of these:
+        4854419 (31.18%) aligned 0 times
+        2381593 (15.30%) aligned exactly 1 time
+        8334920 (53.53%) aligned >1 times
+94.49% overall alignment rate

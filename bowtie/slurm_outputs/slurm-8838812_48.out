@@ -1,0 +1,17 @@
+Wall-355-D_R1_paired.fq.gz
+Wall-355-D_R2_paired.fq.gz
+52164593 reads; of these:
+  52164593 (100.00%) were paired; of these:
+    10109758 (19.38%) aligned concordantly 0 times
+    10693604 (20.50%) aligned concordantly exactly 1 time
+    31361231 (60.12%) aligned concordantly >1 times
+    ----
+    10109758 pairs aligned concordantly 0 times; of these:
+      567663 (5.62%) aligned discordantly 1 time
+    ----
+    9542095 pairs aligned 0 times concordantly or discordantly; of these:
+      19084190 mates make up the pairs; of these:
+        5536579 (29.01%) aligned 0 times
+        2947859 (15.45%) aligned exactly 1 time
+        10599752 (55.54%) aligned >1 times
+94.69% overall alignment rate
