@@ -6,3 +6,4 @@
 #### -Using trimmomatic/0.36 to trim adaptors and poor quality nucleotides from the data
 #### -Running FASTQC again, on the trimmed reads
 #### -Using Salmon for read counts 
+#### -Using Bowtie2 for quality assurance by aligning reads to the transcriptome and checking alignment rate
