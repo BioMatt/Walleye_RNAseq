@@ -12,7 +12,15 @@
 #### -Running FASTQC again, on the trimmed reads
 #### -Using Salmon for read counts 
 #### -Using Bowtie2 for quality assurance by aligning reads to the transcriptome and checking alignment rate
-#### -Corset for creating supertranscripts from Quasi-likelihood aligned reads from Salmon and the clustered transcriptome from Lace
+#### -Corset for creating supertranscripts from Quasi-likelihood aligned reads from Salmon and the clustered transcriptome from Lace (https://github.com/Oshlack/Corset/wiki)
 #### -Using Star to align read to align trimmed reads to a Lace-clustered transcriptome
 #### -Picard for processing Star-aligned bam files for SNP calling
 #### -FreeBayes run in parallel for SNP calling
+
+## Intermediate scripts:
+#### -This folder is a catch-all for things that aren't shell scripts for a cluster, and aren't run in R
+#### -Lace was used to analyze the transcriptome, creating a new linear representation against which reads were aligned in Star, and to make GFF/GTF files (https://github.com/Oshlack/Lace/wiki)
+#### -VCFtools was used after FreeBayes to filter SNPs for HWE and quality, or just quality.
+
+## R scripts:
+#### -A whole suite of R scripts, generally split up by package, used to filter and analyze the RNA SNPs
