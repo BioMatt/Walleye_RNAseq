@@ -3,7 +3,7 @@
 
 #### Generally, the analysis pipeline covers:
 #### -scripts used on the Compute Canada Cedar cluster (https://www.computecanada.ca/), saved under shell scripts
-#### -scripts intermediate between the cluster and R, such as Corset, Lace, and VCFtools
+#### -scripts intermediate between the cluster and R, such as Lace, Corset, and VCFtools
 #### -scripts from R, used to analyze data
 
 ## Shell scripts:
