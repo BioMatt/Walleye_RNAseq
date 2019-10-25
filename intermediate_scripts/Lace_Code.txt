@@ -1,0 +1,12 @@
+# These are the lines used to run Lace installed in Ubuntu, creating a single linear representation of the walleye transcriptome. See https://github.com/Oshlack/Lace/wiki
+
+# first run:
+source activate lace
+
+
+# the code to run Lace with the walleye transcriptome and corset cluster files in the same place as where the code was started, done after using source activate lace, output directory lace2
+python Lace.py walleye_transcriptome.fa corset_clusters.txt -t --cores 6 -o wall_lace2/
+
+
+# This is the code to create the SuperDuperTrans.gff file for Star, which includes annotations of the transcripts. Run this in the same directory as the new .fasta file, so ../wall_lace2/ in this case
+python ../Checker.py --cores 6 SuperDuper.fasta
