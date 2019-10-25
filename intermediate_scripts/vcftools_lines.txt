@@ -1,0 +1,20 @@
+# Lines used to filter the raw VCF from FreeBayes for SNPs in HWE, or just for SNPs showing certain quality thresholds.
+
+# To run VCFTools on the Cedar cluster on Compute Canada/Westgrid, first load module dependences:
+module load nixpkgs/16.09 intel/2018.3
+
+module load vcftools/0.1.14
+
+# Running VCF tools to only keep indels
+vcftools --vcf wall_snps_cigar_parallel_7day.vcf --maf 0.05 --minGQ 20 --keep-only-indels --remove-filtered-all --recode --recode-INFO-all --out indels_filtered
+
+
+# Running VCF tools to only keep SNPs
+vcftools --vcf wall_snps_cigar_parallel_7day.vcf --maf 0.05 --minGQ 20 --remove-indels --remove-filtered-all --recode --recode-INFO-all --out snps_filtered
+
+# Running VCF tools, keeping only biallelic SNPs, maf 0.05, genotype and site quality 20 (99% confidence), no missing data
+vcftools --vcf wall_snps_ann.vcf --maf 0.05 --max-maf 0.95 --minQ 20 --minGQ 20 --remove-indels --min-alleles 2 --max-alleles 2 --max-missing 1 --recode --recode-INFO-all --out biallelic_snps_noNA_maf0.05
+
+# Running VCFtools, keeping only biallelic SNPs, maf 0.05, genotype and site quality 30 (99.9% confidence), no missing data, and filtering for SNPs in HWE
+
+vcftools --vcf wall_snps_ann.vcf --maf 0.05 --max-maf 0.95 --hwe 0.005 --minQ 30 --minGQ 30 --remove-indels --min-alleles 2 --max-alleles 2 --max-missing 1 --recode --recode-INFO-all --out HWE_biallelic_snps_noNA_maf0.05
