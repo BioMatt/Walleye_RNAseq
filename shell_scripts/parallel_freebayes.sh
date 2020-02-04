@@ -2,7 +2,6 @@
 #SBATCH --time=672:00:00
 #SBATCH --account=def-kmj477
 #SBATCH --mem=0
-#SBATCH --cpus-per-task=36
 #SBATCH --mail-user=thorstem@myumanitoba.ca
 #SBATCH --mail-type=ALL
 #SBATCH --constraint=skylake
