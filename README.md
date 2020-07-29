@@ -1,6 +1,8 @@
 # Walleye RNA sequencing and analysis
 #### This repository covers the pipeline used for analyzing the full transcriptomes of 48 female walleye from Lake Winnipeg, caught in 2017 and 2018. These samples were sequenced on an Illumina NovaSeq 6000 with 2,170,826,311 reads and 438,506,914,822 bases observed. 
 
+#### The work is now published in *Ecology and Evolution* http://dx.doi.org/10.1002/ece3.6418
+
 #### Generally, the analysis pipeline covers:
 * #### scripts used on the Compute Canada Cedar cluster (https://www.computecanada.ca/), saved under shell scripts
 * #### scripts intermediate between the cluster and R. I.E., Lace and VCFtools
